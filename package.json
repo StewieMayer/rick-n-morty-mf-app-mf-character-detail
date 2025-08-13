@@ -1,0 +1,33 @@
+{
+  "name": "mf-character-detail",
+  "version": "0.0.0",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StewieMayer/rick-n-morty-mf-app-mf-character-detail.git"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "react",
+    "typescript",
+    "module federation",
+    "jest",
+    "rtl",
+    "rtk",
+    "tailwind",
+    "husky",
+    "eslint",
+    "prettier"
+  ],
+  "author": "Antonio Amaya \"Stewie Mayer\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StewieMayer/rick-n-morty-mf-app-mf-character-detail/issues"
+  },
+  "homepage": "https://github.com/StewieMayer/rick-n-morty-mf-app-mf-character-detail#readme",
+  "description": ""
+}

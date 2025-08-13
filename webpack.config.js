@@ -8,6 +8,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
     alias: {
       "@": path.resolve(__dirname, "src"),
+      "@styles": path.resolve(__dirname, "src/styles"),
     },
   },
   module: {
@@ -15,6 +16,11 @@ module.exports = {
       {
         test: /\.(ts|tsx|js|jsx)$/,
         use: "babel-loader",
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(css|sccs)$/,
+        use: ["style-loader", "css-loader", "postcss-loader"],
         exclude: /node_modules/,
       },
     ],
@@ -25,10 +31,10 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: './dist',
+    static: "./dist",
     port: 3002,
     hot: true,
-    open:true,
+    open: true,
     historyApiFallback: true,
   },
   output: {

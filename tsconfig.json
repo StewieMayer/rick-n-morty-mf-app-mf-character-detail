@@ -1,20 +1,23 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "baseUrl": "./",
-        "paths": {},
-        "module": "esnext",
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "resolveJsonModule": true,
-        "lib": ["ESNext", "DOM", "DOM.Iterable"],
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "allowJs": true,
-        "jsx": "react-jsx",
-        "strict": true,
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@styles/*": ["src/styles/*"]
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "coverage"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "strict": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "coverage"]
 }

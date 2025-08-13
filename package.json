@@ -1,6 +1,6 @@
 {
   "name": "mf-character-detail",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "index.tsx",
   "scripts": {
     "build": "webpack --config webpack.config.js",

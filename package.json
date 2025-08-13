@@ -29,5 +29,9 @@
     "url": "https://github.com/StewieMayer/rick-n-morty-mf-app-mf-character-detail/issues"
   },
   "homepage": "https://github.com/StewieMayer/rick-n-morty-mf-app-mf-character-detail#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
 }

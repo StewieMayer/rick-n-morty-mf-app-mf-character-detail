@@ -5,6 +5,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "webpack serve --config webpack.config.js",
+    "start:standalone":"webpack serve --config webpack.config.js --env standalone=true",
     "test": "jest"
   },
   "repository": {

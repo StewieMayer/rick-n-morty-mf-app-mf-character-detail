@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { ModuleFederationPlugin } = require("webpack").container;
+const { dependencies } = require("./package.json");
 const path = require("path");
 
 module.exports = {
@@ -28,6 +30,20 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
+    }),
+    new ModuleFederationPlugin({
+      name: "mfCharacterDetail",
+      filename: "re-mf-character-detail.js",
+      exposes: {
+        "./MfCharacterDetail": "./src/App",
+      },
+      shared: {
+        react: { singleton: true, requiredVersion: dependencies.react },
+        "react-dom": {
+          singleton: true,
+          requiredVersion: dependencies["react-dom"],
+        },
+      },
     }),
   ],
   devServer: {
